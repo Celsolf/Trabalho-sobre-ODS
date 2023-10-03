@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* Definição de variáveis de cores no :root */
+:root {
+  --cor-primaria: #035931;
+  --cor-secundaria: #34B36A;
+  --cor-terciaria: #2119B3;
+  --cor-quaternaria: #D95C14;
+}
+
+/* Estilos para o contêiner */
+.container {
+  border-radius: 10px;
+  text-align: justify;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  max-width: 500px;
+}
+
+/* Estilos para o corpo do documento */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para cabeçalho */
+.cadastro {
+  text-align: center;
+  color: var(--cor-quaternaria);
+}
+
+/* Estilos para rótulos e parágrafos */
+label,
+p {
+  color: black;
+}
+
+/* Estilos para botões */
+input[type="submit"],
+.btn-voltar {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+.btn-voltar:hover {
+  background-color: var(--cor-quaternaria);
+}
+
+/* Estilos para rodapé */
+footer {
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  color: white;
+}

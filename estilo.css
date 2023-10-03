@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* Definição de variáveis de cores no :root */
+:root {
+  --cor1: #035931; /* Azul claro para fundo */
+  --cor2: #34B36A; /* Azul médio para destaques */
+  --cor3: #2119B3; /* Azul escuro para texto principal */
+  --cor4: #D95C14; /* Laranja para destaque de informações */
+}
+
+/* Estilos para o contêiner */
+.container {
+  background-color: white;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 25px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+
+/* Estilos para o corpo do documento */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor1); /* Fundo azul claro */
+  color: var(--cor3); /* Texto principal em azul escuro */
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Estilos para cabeçalho */
+header {
+  background-color: var(--cor2); 
+  color: white; 
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  color: var(--cor4);
+}
+
+p {
+  color: black;
+}
+/* Estilos para links de navegação */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--cor3); 
+}
+
+/* Estilos para seção de conteúdo */
+section {
+  padding: 20px;
+}
+
+/* Estilos para rodapé */
+footer {
+  padding: 10px;
+  background-color:var(--cor2); 
+  text-align: center;
+}
+
+footer > p {
+  margin: 0;
+  color: white; 
+}
+
+

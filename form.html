@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -9,24 +9,35 @@
 </head>
 
 <body>
-    <div class="container">
-        <form action="link">
-            <h2 class="cadastro">Tela de Cadastro</h2>
-            <label for="nome">Nome da Conta:</label><br>
-            <input type="text" id="nome" name="nome" required><br>
-            <label for="gmail">Gmail:</label><br>
-            <input type="email" id="gmail" name="gmail" required><br>
-            <label for="telefone">Telefone para Contato:</label><br>
-            <input type="text" id="telefone" name="telefone" required><br>
-            <br>
-            <label for="opn">Informações sobre a Empresa:</label><br>
-            <textarea id="opn" name="opn" rows="5" cols="30"></textarea><br>
-            <label for="senha">Senha:</label><br>
-            <input type="password" id="senha" name="senha" required><br><br>
-            <input type="submit" value="Enviar"> <br> <br>
-        </form>
-        <a href="index.html" class="btn-voltar">Voltar</a>
-    </div>
+    <header>
+        <h1 class="cadastro">Tela de Cadastro</h1>
+    </header>
+    <main>
+        <section class="container">
+            <form action="link">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required> <br>
+                
+                <label for="info" id="textlabel">Informações adicionais:</label>
+                <textarea id="info" name="info" rows="5" cols="30" placeholder="Deixe um comentário legal :)"></textarea> 
+                <br>
+                <input type="submit" value="Enviar"> 
+                <a href="index.html" class="btn-voltar">Voltar</a>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Guilherme S. e Celso L. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

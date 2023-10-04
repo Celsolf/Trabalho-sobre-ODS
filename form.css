@@ -1,3 +1,4 @@
+/* Estilos para o corpo do documento */
 @charset "UTF-8";
 
 /* Definição de variáveis de cores no :root */
@@ -8,17 +9,6 @@
   --cor-quaternaria: #D95C14;
 }
 
-/* Estilos para o contêiner */
-.container {
-  border-radius: 10px;
-  text-align: justify;
-  margin: 50px auto;
-  background-color: white;
-  padding: 30px;
-  max-width: 500px;
-}
-
-/* Estilos para o corpo do documento */
 body {
   font-family: Arial, sans-serif;
   background-color: var(--cor-primaria);
@@ -30,26 +20,81 @@ body {
 /* Estilos para cabeçalho */
 .cadastro {
   text-align: center;
-  color: var(--cor-quaternaria);
+  color: white;
+  margin-top: 20px;
 }
 
-/* Estilos para rótulos e parágrafos */
-label,
-p {
+/* Estilos para o contêiner */
+.container {
+  border-radius: 10px;
+  text-align: justify;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+}
+
+/* Estilos para rótulos */
+label {
   color: black;
+  margin-top: 10px;
+}
+
+label#textlabel {
+  display: block;
+  margin-top: 15px;
+}
+
+/* Estilos para entrada de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  margin-top: 5px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-left: 30px;
+}
+
+input[type="tel"] {
+  margin-left: 15px;
+}
+
+
+textarea {
+  display: block;
+  margin-top: 10px;
 }
 
 /* Estilos para botões */
 input[type="submit"],
 .btn-voltar {
-  background-color: var(--cor-secundaria);
-  color: white;
+  font-family: monospace;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: var(--cor-terciaria);
+  color: white;
+}
+
+.btn-voltar {
+  background-color: var(--cor-secundaria);
+  color: white;
+  margin-left: 20px;
 }
 
 input[type="submit"]:hover,
@@ -60,7 +105,11 @@ input[type="submit"]:hover,
 /* Estilos para rodapé */
 footer {
   padding: 10px;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-destaque); 
   text-align: center;
-  color: white;
+}
+
+footer > p {
+  margin: 0;
+  color: white; 
 }

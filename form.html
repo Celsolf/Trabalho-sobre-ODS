@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
@@ -14,6 +14,7 @@
     </header>
     <main>
         <section class="container">
+            <h4>Apoie essa ODS</h4>
             <form action="link">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required><br>
@@ -21,14 +22,15 @@
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required><br>
 
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required> <br>
+
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" required><br>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required> <br>
-                
                 <label for="info" id="textlabel">Informações adicionais:</label>
                 <textarea id="info" name="info" rows="5" cols="30" placeholder="Deixe um comentário legal :)"></textarea> 
+                
                 <br>
                 <input type="submit" value="Enviar"> 
                 <a href="index.html" class="btn-voltar">Voltar</a>

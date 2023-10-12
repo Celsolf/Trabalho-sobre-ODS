@@ -34,6 +34,12 @@ body {
   max-width: 500px;
 }
 
+h4 {
+  margin-top: 0px;
+  color: var(--cor-quaternaria);
+  text-align: center;
+}
+
 /* Estilos para rótulos */
 label {
   color: black;
@@ -51,17 +57,20 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 textarea {
-  margin-top: 5px;
+  margin-top: 10px;
   width: 200px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-input[type="text"],
 input[type="email"],
 input[type="password"] {
   margin-left: 30px;
+}
+
+input[type="text"]{
+  margin-left: 31px;
 }
 
 input[type="tel"] {
